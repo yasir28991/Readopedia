@@ -6,7 +6,29 @@ body {
     font-size: 18px;
 }
 
+/* Temporary */
+
+/* nav ul {
+    border: 1px solid black;
+}
+
+nav p {
+    border: 2px solid rgb(223, 30, 30);
+    
+} */
+/* Temporary */
+
 /* Navigation */
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list ul {
+    padding: 0;
+    margin: 0;
+}
 
 nav p {
     font-size: 2em;
@@ -32,12 +54,15 @@ nav li {
     margin: 0;
     list-style: none;
     display: inline;
+    padding: 0vh;
     margin: 0 1em ;
 }
 
 nav a {
     color: rgb(255, 255, 255);
     font-weight: 700;
+    margin: 0;
+    padding: 0;
 }
 
 nav a:hover ,
@@ -58,27 +83,6 @@ nav a:focus {
     margin: 1em auto;
 }
 
-/* Seperate article page */
-
-.full-article-heading {
-    font-family: 'Arial' , sans-serif;
-    font-weight: 900;
-    text-align: left;
-    color: black;
-    font-size: 4em;
-    line-height: .950em;
-    width: 90%;
-    margin: 0 auto 0 auto;
-}
-
-.full-article {
-    width: 90%;
-    margin: 0 auto;
-    border: none;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0;
-    font-size: 1.2em;
-}
 /* Certain widths */
 
 .twenty-five {
@@ -113,12 +117,14 @@ a {
     text-decoration: none;
 }
 
-article {
-    font-family:'Trebuchet MS', 'sans-serif';
-    text-align: justify;
-    margin-bottom: 4em;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.37);
-    padding-bottom: .900em;
+/* End of Default Behaviour */
+
+/* Main page */
+
+main {
+    width: 73%;
+    /* border: solid black 1px; */
+    padding: 0.500em 0.700em;
 }
 
 .latest-content {
@@ -126,6 +132,16 @@ article {
     color: rgba(0, 0, 0, 0.863);
     border: solid 1px saddlebrown;
     margin: 0;
+}
+
+/* All Default layout of Articles */
+
+article {
+    font-family:'Trebuchet MS', 'sans-serif';
+    text-align: justify;
+    margin-bottom: 4em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.37);
+    padding-bottom: .900em;
 }
 
 article a {
@@ -183,15 +199,6 @@ article h5 {
     margin-bottom: 1.5em;
     color: rgb(21, 80, 70);
 }
-/* End of Default Behaviour */
-
-/* Main page */
-
-main {
-    width: 73%;
-    /* border: solid black 1px; */
-    padding: 0.500em 0.700em;
-}
 
 /* Sidebar */
 
@@ -201,8 +208,56 @@ aside {
     /* border: solid red 1px; */
 }
 
+/* End of Sidebar */
+
 /* End of Main page */
 
+/* Seperate page of article */
+
+.full-article-heading {
+    font-family: 'Arial' , sans-serif;
+    font-weight: 900;
+    text-align: left;
+    color: black;
+    font-size: 4em;
+    line-height: .950em;
+    width: 90%;
+    margin: 0 auto 0 auto;
+}
+
+.full-article {
+    width: 90%;
+    margin: 0 auto;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+/* End of seperate page for article */
 
 
 /* Media queries */
+
+@media (max-width: 500px)
+{
+    .container-flex {
+        flex-direction: column;
+    }
+
+    .nav-flex {
+        flex-direction: column;
+    }
+
+    nav li {
+        text-align: center;
+        display: block;
+        margin: .500em auto;
+    }
+    
+    .title {
+        text-align: center;
+    }
+}
+
+/* End of media queries */
