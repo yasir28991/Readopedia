@@ -1,0 +1,154 @@
+body {
+    max-width: 100;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/* Navigation */
+
+nav p {
+    font-style: oblique;
+    font-size: 1.5em;
+    margin: .400em 0;
+    padding: 0;
+    color: rgb(228, 241, 207);
+    font-family: fantasy;
+    font-weight: 600;
+}
+
+nav {
+    width: 100%;
+    height: 10%;
+    color: black;
+    margin: 0;
+    padding: 0.500em 1em;
+    background-color: lightcoral;
+    box-sizing: border-box;
+}
+
+nav li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline;
+    margin: 0 1em;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+
+nav a:hover ,
+nav a:focus {
+    color: rgb(0, 0, 0);
+}
+
+/* End of navigation */
+
+/* Reusable Classes */
+.container-flex {
+   display: flex;
+   justify-content: space-between;
+}
+
+.container {
+    width: 97%;
+    margin: 1em auto;
+}
+
+/* Seperate article page */
+
+.full-article-heading {
+    font-family: 'Arial' , sans-serif;
+    font-weight: 900;
+    text-align: left;
+    color: rgb(54, 15, 196);
+    font-size: 4em;
+    line-height: .950em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.full-article {
+    width: 90%;
+    margin: 0 auto;
+    border: none;
+    padding: 0;
+    font-size: 1.2em;
+}
+/* Certain widths */
+
+.twenty-five {
+    width: 22.5%;
+}
+
+.fifty {
+    width: 47.5%;
+}
+
+.seventy-five {
+    width: 72.5%;
+}
+
+.hundred {
+    width: 100%;
+}
+
+/* Reusable Classes */
+
+/* Default Behaviour */
+a {
+    text-decoration: none;
+}
+
+article {
+    font-family:'Trebuchet MS', 'sans-serif';
+    padding: 0.100em .500em;
+    border: solid 3px rgb(18, 116, 99);
+    border-radius: 10px;
+}
+
+.latest-content {
+    font-family: fantasy, sans-serif;
+    color: rgb(45, 5, 156);
+}
+
+article a {
+    text-decoration: none;
+    padding: 0.200em 1em;
+    border-radius: 4px;
+    background-color: green;
+    color: whitesmoke;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    pointer-events: visible;
+    letter-spacing: 2px;
+}
+
+article a:hover,
+article a:focus {
+    background-color: rgba(0, 128, 0, 0.849);
+}
+
+article h3 {
+    margin-bottom: 0.150em;
+    color: brown;
+}
+
+article p {
+    margin-top: 0.150em;
+}
+/* End of Default Behaviour */
+
+/* Main page */
+
+/* End of Main page */
+
+
+
+/* Media queries */
