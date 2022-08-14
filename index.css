@@ -25,11 +25,6 @@ nav p {
     justify-content: space-between;
 }
 
-.list ul {
-    padding: 0;
-    margin: 0;
-}
-
 nav p {
     font-size: 2em;
     margin: .150em 0;
@@ -257,6 +252,11 @@ aside {
     
     .title {
         text-align: center;
+    }
+    
+    .list ul {
+        padding: 0;
+        margin: 0;
     }
 }
 
