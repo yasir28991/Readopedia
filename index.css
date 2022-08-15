@@ -116,12 +116,6 @@ a {
 
 /* Main page */
 
-main {
-    width: 73%;
-    /* border: solid black 1px; */
-    padding: 0.500em 0.700em;
-}
-
 .latest-content {
     font-family:Georgia, 'Times New Roman', Times, serif;
     color: rgba(0, 0, 0, 0.863);
@@ -195,6 +189,12 @@ article h5 {
     color: rgb(21, 80, 70);
 }
 
+main {
+    width: 73%;
+    /* border: solid black 1px; */
+    padding: 0.500em 0.700em;
+}
+
 /* Sidebar */
 
 aside {
@@ -234,7 +234,7 @@ aside {
 
 /* Media queries */
 
-@media (max-width: 500px)
+@media (max-width: 890px)
 {
     .container-flex {
         flex-direction: column;
@@ -257,6 +257,16 @@ aside {
     .list ul {
         padding: 0;
         margin: 0;
+    }
+
+    main {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    aside {
+        width: 100%;
+        box-sizing: border-box;
     }
 }
 
