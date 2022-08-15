@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+
 body {
     max-width: 100;
     margin: 0;
@@ -201,6 +204,13 @@ aside {
     margin-top: 0;
     width: 23%;
     /* border: solid red 1px; */
+}
+
+.aside-title {
+    font-family: 'Bangers', cursive;
+    margin-top: 0;
+    font-size: 2rem;
+    color: rgba(228, 1, 39, 0.623);
 }
 
 /* End of Sidebar */
